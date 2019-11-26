@@ -1,0 +1,242 @@
+\begin{theindex}
+
+  \item {assetLoadScript}
+    \subitem {assets.c}, \hyperpage{13}
+  \item {assetLoadShader}
+    \subitem {assets.c}, \hyperpage{14}
+  \item {assetLoadTrueTypeFont}
+    \subitem {assets.c}, \hyperpage{14}
+  \item {assets.c}
+    \subitem {assetLoadScript}, \hyperpage{13}
+    \subitem {assetLoadShader}, \hyperpage{14}
+    \subitem {assetLoadTrueTypeFont}, \hyperpage{14}
+  \item {assets\_script.c}
+    \subitem {scriptAssetLoadScript}, \hyperpage{16}
+    \subitem {scriptAssetLoadTrueTypeFont}, \hyperpage{16}
+  \item {audio\_buffer}
+    \subitem {System::System\_Audio}, \hyperpage{6}
+  \item {audio\_device}
+    \subitem {System::System\_Audio}, \hyperpage{6}
+  \item {audio\_spec}
+    \subitem {System::System\_Audio}, \hyperpage{6}
+
+  \indexspace
+
+  \item {bytes\_per\_sample}
+    \subitem {System::System\_Audio}, \hyperpage{6}
+
+  \indexspace
+
+  \item {crt\_shader}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {debug.c}
+    \subitem {debugPrintCallStackTrace}, \hyperpage{17}
+  \item {debugPrintCallStackTrace}
+    \subitem {debug.c}, \hyperpage{17}
+
+  \indexspace
+
+  \item {event.c}
+    \subitem {eventKeyboard}, \hyperpage{18}
+    \subitem {eventText}, \hyperpage{18}
+    \subitem {eventTextControl}, \hyperpage{19}
+  \item {eventKeyboard}
+    \subitem {event.c}, \hyperpage{18}
+  \item {eventText}
+    \subitem {event.c}, \hyperpage{18}
+  \item {eventTextControl}
+    \subitem {event.c}, \hyperpage{19}
+
+  \indexspace
+
+  \item {file.c}
+    \subitem {fileRead}, \hyperpage{19}
+  \item {fileRead}
+    \subitem {file.c}, \hyperpage{19}
+
+  \indexspace
+
+  \item {gl\_context}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {height}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {keyboard}
+    \subitem {System::System\_Controls}, \hyperpage{7}
+
+  \indexspace
+
+  \item {last\_counter}
+    \subitem {System::System\_Time}, \hyperpage{9}
+  \item {left}
+    \subitem {System::System\_Controls}, \hyperpage{7}
+  \item {log.c}
+    \subitem {Log\_Channel}, \hyperpage{20}
+    \subitem {Log\_Level}, \hyperpage{21}
+    \subitem {logConsole}, \hyperpage{21}
+    \subitem {logGLDebugCallback}, \hyperpage{21}
+  \item {Log\_Channel}
+    \subitem {log.c}, \hyperpage{20}
+  \item {Log\_Level}
+    \subitem {log.c}, \hyperpage{21}
+  \item {log\_script.c}
+    \subitem {scriptLog}, \hyperpage{22}
+  \item {logConsole}
+    \subitem {log.c}, \hyperpage{21}
+  \item {logGLDebugCallback}
+    \subitem {log.c}, \hyperpage{21}
+  \item {luabuffer}
+    \subitem {System::System\_Window}, \hyperpage{10}
+  \item {luabuffer\_texture}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{26}
+  \item {main.c}
+    \subitem {main}, \hyperpage{26}
+    \subitem {SCRIPT\_FUNCTION\_GAME\_UPVALUE}, \hyperpage{24}
+    \subitem {SCRIPT\_FUNCTION\_NO\_UPVALUE}, \hyperpage{24}
+    \subitem {SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}, \hyperpage{25}
+    \subitem {SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}, \hyperpage{25}
+    \subitem {System}, \hyperpage{25}
+  \item {middle}
+    \subitem {System::System\_Controls}, \hyperpage{8}
+  \item {mouse}
+    \subitem {System::System\_Controls}, \hyperpage{8}
+
+  \indexspace
+
+  \item {opengl.c}
+    \subitem {openglShaderCreate}, \hyperpage{26}
+  \item {openglShaderCreate}
+    \subitem {opengl.c}, \hyperpage{26}
+
+  \indexspace
+
+  \item {quad\_vao}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {render.c}
+    \subitem {renderText}, \hyperpage{27}
+  \item {render\_script.c}
+    \subitem {scriptRenderGetTextDimensions}, \hyperpage{29}
+    \subitem {scriptRenderText}, \hyperpage{29}
+  \item {renderText}
+    \subitem {render.c}, \hyperpage{27}
+  \item {right}
+    \subitem {System::System\_Controls}, \hyperpage{8}
+
+  \indexspace
+
+  \item {SCRIPT\_FUNCTION\_GAME\_UPVALUE}
+    \subitem {main.c}, \hyperpage{24}
+  \item {SCRIPT\_FUNCTION\_NO\_UPVALUE}
+    \subitem {main.c}, \hyperpage{24}
+  \item {SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}
+    \subitem {main.c}, \hyperpage{25}
+  \item {SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}
+    \subitem {main.c}, \hyperpage{25}
+  \item {scriptAssetLoadScript}
+    \subitem {assets\_script.c}, \hyperpage{16}
+  \item {scriptAssetLoadTrueTypeFont}
+    \subitem {assets\_script.c}, \hyperpage{16}
+  \item {scriptLog}
+    \subitem {log\_script.c}, \hyperpage{22}
+  \item {scriptRenderGetTextDimensions}
+    \subitem {render\_script.c}, \hyperpage{29}
+  \item {scriptRenderText}
+    \subitem {render\_script.c}, \hyperpage{29}
+  \item {src/assets.c}, \hyperpage{13}
+  \item {src/assets\_script.c}, \hyperpage{15}
+  \item {src/debug.c}, \hyperpage{16}
+  \item {src/event.c}, \hyperpage{17}
+  \item {src/file.c}, \hyperpage{19}
+  \item {src/log.c}, \hyperpage{20}
+  \item {src/log\_script.c}, \hyperpage{22}
+  \item {src/main.c}, \hyperpage{23}
+  \item {src/opengl.c}, \hyperpage{26}
+  \item {src/render.c}, \hyperpage{27}
+  \item {src/render\_script.c}, \hyperpage{28}
+  \item {src/time.c}, \hyperpage{30}
+  \item {System}, \hyperpage{5}
+    \subitem {main.c}, \hyperpage{25}
+  \item {System::System\_Audio}, \hyperpage{6}
+    \subitem {audio\_buffer}, \hyperpage{6}
+    \subitem {audio\_device}, \hyperpage{6}
+    \subitem {audio\_spec}, \hyperpage{6}
+    \subitem {bytes\_per\_sample}, \hyperpage{6}
+    \subitem {target\_queue\_bytes}, \hyperpage{6}
+    \subitem {volume}, \hyperpage{7}
+  \item {System::System\_Controls}, \hyperpage{7}
+    \subitem {keyboard}, \hyperpage{7}
+    \subitem {left}, \hyperpage{7}
+    \subitem {middle}, \hyperpage{8}
+    \subitem {mouse}, \hyperpage{8}
+    \subitem {right}, \hyperpage{8}
+    \subitem {x}, \hyperpage{8}
+    \subitem {y}, \hyperpage{8}
+  \item {System::System\_Time}, \hyperpage{8}
+    \subitem {last\_counter}, \hyperpage{9}
+  \item {System::System\_Window}, \hyperpage{9}
+    \subitem {crt\_shader}, \hyperpage{10}
+    \subitem {gl\_context}, \hyperpage{10}
+    \subitem {height}, \hyperpage{10}
+    \subitem {luabuffer}, \hyperpage{10}
+    \subitem {luabuffer\_texture}, \hyperpage{10}
+    \subitem {quad\_vao}, \hyperpage{10}
+    \subitem {width}, \hyperpage{10}
+    \subitem {window}, \hyperpage{10}
+    \subitem {xbloom\_shader}, \hyperpage{11}
+    \subitem {xbloombuffer}, \hyperpage{11}
+    \subitem {xbloombuffer\_texture}, \hyperpage{11}
+
+  \indexspace
+
+  \item {target\_queue\_bytes}
+    \subitem {System::System\_Audio}, \hyperpage{6}
+  \item {time.c}
+    \subitem {timeMicrosecondsElapsed}, \hyperpage{30}
+  \item {timeMicrosecondsElapsed}
+    \subitem {time.c}, \hyperpage{30}
+
+  \indexspace
+
+  \item {volume}
+    \subitem {System::System\_Audio}, \hyperpage{7}
+
+  \indexspace
+
+  \item {width}
+    \subitem {System::System\_Window}, \hyperpage{10}
+  \item {window}
+    \subitem {System::System\_Window}, \hyperpage{10}
+
+  \indexspace
+
+  \item {x}
+    \subitem {System::System\_Controls}, \hyperpage{8}
+  \item {xbloom\_shader}
+    \subitem {System::System\_Window}, \hyperpage{11}
+  \item {xbloombuffer}
+    \subitem {System::System\_Window}, \hyperpage{11}
+  \item {xbloombuffer\_texture}
+    \subitem {System::System\_Window}, \hyperpage{11}
+
+  \indexspace
+
+  \item {y}
+    \subitem {System::System\_Controls}, \hyperpage{8}
+
+\end{theindex}

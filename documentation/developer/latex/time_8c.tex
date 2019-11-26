@@ -1,0 +1,45 @@
+\hypertarget{time_8c}{}\section{src/time.c File Reference}
+\label{time_8c}\index{src/time.c@{src/time.c}}
+
+
+Functions for timing.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function F64 \mbox{\hyperlink{time_8c_a42e79bdeefc51104041d5c60ff70d2c1}{time\+Microseconds\+Elapsed}} (U64 $\ast$last\+\_\+counter)
+\begin{DoxyCompactList}\small\item\em Function to compute elapsed time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for timing. 
+
+These functions are used for various timing related operations, the output of which is then used in various synchronized actrivities such as animation. In the current program, the only place we make use of timing is during the blinking of cursor.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{time_8c_a42e79bdeefc51104041d5c60ff70d2c1}\label{time_8c_a42e79bdeefc51104041d5c60ff70d2c1}} 
+\index{time.c@{time.c}!timeMicrosecondsElapsed@{timeMicrosecondsElapsed}}
+\index{timeMicrosecondsElapsed@{timeMicrosecondsElapsed}!time.c@{time.c}}
+\subsubsection{\texorpdfstring{timeMicrosecondsElapsed()}{timeMicrosecondsElapsed()}}
+{\footnotesize\ttfamily internal\+\_\+function F64 time\+Microseconds\+Elapsed (\begin{DoxyParamCaption}\item[{U64 $\ast$}]{last\+\_\+counter }\end{DoxyParamCaption})}
+
+
+
+Function to compute elapsed time. 
+
+Given start time, this function count the total elapsed time from the start time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em last\+\_\+counter} & From when to start counting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time passed since {\ttfamily last\+\_\+counter} 
+\end{DoxyReturn}

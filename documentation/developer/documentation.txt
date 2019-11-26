@@ -1,0 +1,6 @@
+Modification Instructions:
+    To make changes to the tutorial, edit the file `data/scripts/tutorial.lua`
+
+    To add new commands, add a new source file with proper command implementation
+    in `data/scripts/command` and then add an entry of the file in the Lua file
+    `data/scripts/command/command.lua`.

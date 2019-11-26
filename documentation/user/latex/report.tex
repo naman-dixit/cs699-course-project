@@ -1,0 +1,104 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\usepackage{floatrow}
+\usepackage{layout}
+\usepackage{amssymb} 
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{multirow}
+\usepackage{caption}
+\geometry{margin=1in}
+\usepackage{authblk}
+\usepackage{indentfirst}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\newtheorem{lemma}{Lemma}
+\newtheorem{sublemma}{Lemma}[lemma]
+\begin{document}
+\title{\textbf{\huge{Educational Platform For Creating Interactive Learning Material For Command Line Interfaces}}}
+\author{\textbf\large{Naman Dixit \quad Abbas Ahmad \quad Prince Kumar \\ 19305R005 \quad\quad\quad 193050072 \quad\qquad 193050070}}
+\affil{\textbf{Indian Institute of Technology, Bombay}}
+\date{\today}
+
+\maketitle
+\begin{abstract}
+We present an extendable platform for creating hands-on, approachable and beginner-friendly  educational materials and courses to teach command line tools. We also detail some of the technical details about our approach as well as our vision for the future of the tool.
+
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+In this project, we implement a platform which enables educators to create interactive learning material to teach command line interfaces and the corresponding tools. The platform provides a uniform user-friendly environment to learn CLIs for beginners. Our goal is to make learning CLIs approachable, safe and fun. To do this, we use the principles of user experience and virtualization for the sake of the student, while making sure that the platform is flexible and extendable to empower the teacher.
+
+\section{Motivation}
+In our experience, we have found that many students who are novices in using command line find it very obtuse and alien. They also fear learning by trial-and-error for the fear of messing up something irreversibly, due to a lack of hand-holding from such interfaces. This results in a lack of soft skills in using Linux and other UNIX systems, which then hampers the expression of the student's hard skills. An example of such phenomena would be an inability to write Makefiles due to not being proficient with the way compilers accept arguments on the command line. Thus, we found ourselves motivated to find a way to create an approachable, non-threatening teaching environment for command line interfaces, aimed at new users.
+
+\section{Prior work}
+While researching the problem space, we stumbled upon many projects with similar goals. SOme of the more noteworthy ones were:
+\begin{description}
+    \item [\quad\quad\quad War Games.] Developed for teaching security concepts in Linux \cite{wargames}
+    \item [\quad\quad\quad Terminus.] Fantasy game where commands operate akin to magic spells \cite{terminus}
+    \item [\quad\quad\quad VIM Adventures.] An Zelda-like adventure game for teaching VIM keyboard bindings \cite{vimadvent}
+    \item [\quad\quad\quad clmystery.] A murder mystery game that tries to get user accustomed to CLIs \cite{clmystery}
+\end{description}
+
+While these works are laudable, we felt that each of them were too domain-specific and not flexible enough to cater to the diverse needs of both teachers and students. Thus, we decided to create a general platform on top of which it would be possible to create a any of such specific tutorials.
+
+\section{Implementation}
+We wrote the lower level code for this software in C to make sure that project was as portable as possible. We also used Lua 5.1\cite{lua} to implement a higher-level scripting layer; since Lua is itself written in ANSI C, this choice did not hurt the portability of the platform.
+
+The overall architecture of our system consists of following components:
+
+\subsection{Platform layer}
+This is the lowest level layer and manages the interactions of the software with the hardware and the operating system. Such interactions include creating a window, talking the the graphics processor, playing audio, receiving user input, etc. This layer is implemented almost completely using SDL 2.0.4\cite{sdl} and OpenGL 4.5\cite{opengl}. This means that this layer in easily portable across a variety of systems, including Windows, Linux, Android, etc. The small part which is Linux-dependent has to do with debugging and is not critical for the software to function.
+
+\subsection{Engine layer}
+The next level of abstraction comes in the form of a game engine, which we implement on top of our Platform Layer. This layer implements the most basic primitives that are still recognizable as a meaning operations. These include rendering a quad, loading script code, asset management, etc. This layer is completely platform independent.
+
+\subsection{Interface layer}
+In this layer, we stop programming in C and move up to Lua. Using it, we implement a virtualization layer that emulates basic properties of a Linux system (shell, file system, etc.) allowing experimentation in a sandbox. We also implement a communication mechanism between the C and Lua parts of the software, as well as the lay the architectural foundations for the higher-level code.
+
+\subsection{Gameplay logic}
+We implement the user-interface and well as all the logic that governs user interaction with the program. We also implement a mechanism to create educational material, that can be created and deployed without having to know the internals of the program.
+
+\subsection{Tutorials}
+In this layer, we finally implement various commands and their instructional material. This are the actual learning material that can now be written and executed on this program, and can be used by educators to teach various command line tools.
+
+\section{Requirements}
+As it stands currently, this project requires the following:
+\begin{itemize}
+    \item A computer with a recent Linux installed
+    \item GPU capable of running OpenGL 4.5, with proper drivers installed
+    \item Display with height greater than 720 pixels
+\end{itemize}
+
+\section{Usage}
+To compile the project, one need Clang 8.0 compiler installed on a Linux computer. To compile, run the \texttt{build.linux} script from the project's root directory. To execute, run \texttt{./bin/linux/x64/game}.
+
+The tutorial sequence can be changed in \texttt{data/scripts/tutorial.lua} while commands can be added by adding the appropriate file in the directory \texttt{data/scripts/command} and then adding an entry for the file in \texttt{data/scripts/command/command.lua}.
+
+\section{Conclusion}
+In this project, we created a platform to teach command line interface in a more user-friendly way so that beginners might find it intuitive and fun to learn. We succeeded in creating such a platform, and were able to create a small demonstration of a tutorial to showcase the features of the platform.
+
+\section{Future Work}
+While a basic platform is complete, we would like to add more features to it in order to enable a richer set of primitives to construct the educational material from. We would also like to create full sized tutorials, and implement many more commands and their usage tutorials.
+
+\vspace{10cm}
+\noindent\rule[0.25\baselineskip]{\textwidth}{1pt}
+
+
+
+
+
+\bibliography{report}
+
+
+
+\end{document}
+

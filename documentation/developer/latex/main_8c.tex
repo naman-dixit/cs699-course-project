@@ -1,0 +1,203 @@
+\hypertarget{main_8c}{}\section{src/main.c File Reference}
+\label{main_8c}\index{src/main.c@{src/main.c}}
+
+
+Main engine source.  
+
+
+{\ttfamily \#include \char`\"{}nlib/nlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}nlib/linear\+\_\+algebra.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/glad/glad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/glad/glad.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/\+S\+D\+L2/\+S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stb/stb\+\_\+truetype.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/lua/lua.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/lua/lauxlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}external/lua/lualib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}debug.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}log.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opengl.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}render.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}file.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assets.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}event.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}log\+\_\+script.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assets\+\_\+script.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}render\+\_\+script.\+c\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSystem}{System}}
+\begin{DoxyCompactList}\small\item\em Structure that contains all the state of the engine. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structSystem_1_1System__Window}{System\+::\+System\+\_\+\+Window}}
+\begin{DoxyCompactList}\small\item\em Structure that contains the state of the windowing subsystem. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structSystem_1_1System__Audio}{System\+::\+System\+\_\+\+Audio}}
+\begin{DoxyCompactList}\small\item\em Structure that contains the state of the audio subsystem. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structSystem_1_1System__Time}{System\+::\+System\+\_\+\+Time}}
+\begin{DoxyCompactList}\small\item\em Structure that contains the state of the timing subsystem. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structSystem_1_1System__Controls}{System\+::\+System\+\_\+\+Controls}}
+\begin{DoxyCompactList}\small\item\em Structure that contains the state of the control subsystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_afaa2f2d0d9d6726cfae6da070e736347}\label{main_8c_afaa2f2d0d9d6726cfae6da070e736347}} 
+\#define {\bfseries S\+T\+B\+\_\+\+T\+R\+U\+E\+T\+Y\+P\+E\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+T\+I\+ON}
+\item 
+\mbox{\Hypertarget{main_8c_adb252cc9576591994fdf2f89baddc630}\label{main_8c_adb252cc9576591994fdf2f89baddc630}} 
+\#define {\bfseries S\+T\+B\+T\+T\+\_\+\+S\+T\+A\+T\+IC}
+\item 
+\#define {\bfseries S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+U\+P\+V\+A\+L\+UE}(F\+U\+NC)
+\item 
+\#define {\bfseries S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+G\+A\+M\+E\+\_\+\+U\+P\+V\+A\+L\+UE}(F\+U\+NC)
+\item 
+\#define {\bfseries S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+G\+A\+M\+E\+\_\+\+U\+P\+V\+A\+L\+UE}(F\+U\+NC)
+\item 
+\#define {\bfseries S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+\_\+\+U\+P\+V\+A\+L\+UE}(F\+U\+NC)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a19402e9992454e5ccd5f172a9daaef79}\label{main_8c_a19402e9992454e5ccd5f172a9daaef79}} 
+typedef struct System\+\_\+\+Window {\bfseries System\+\_\+\+Window}
+\item 
+\mbox{\Hypertarget{main_8c_a3aef684ef4eb4791a39c3e897c7f857d}\label{main_8c_a3aef684ef4eb4791a39c3e897c7f857d}} 
+typedef struct System\+\_\+\+Audio {\bfseries System\+\_\+\+Audio}
+\item 
+\mbox{\Hypertarget{main_8c_a01d12e2b0985debc333e2e139a733af6}\label{main_8c_a01d12e2b0985debc333e2e139a733af6}} 
+typedef struct System\+\_\+\+Time {\bfseries System\+\_\+\+Time}
+\item 
+\mbox{\Hypertarget{main_8c_ab7ed8fdd7b7cb3183f17d1b077da5e35}\label{main_8c_ab7ed8fdd7b7cb3183f17d1b077da5e35}} 
+typedef struct System\+\_\+\+Controls {\bfseries System\+\_\+\+Controls}
+\item 
+typedef struct \mbox{\hyperlink{structSystem}{System}} \mbox{\hyperlink{main_8c_a1dd08b48036f33b5c02a0818a94fcd05}{System}}
+\begin{DoxyCompactList}\small\item\em Structure that contains all the state of the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Sint \mbox{\hyperlink{main_8c_ae15c7a1542a828750c129bd8cd68b24b}{main}} (Sint argc, Char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Entry point of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_ad4f5e7a1391e298291b42337ec2f1bda}\label{main_8c_ad4f5e7a1391e298291b42337ec2f1bda}} 
+global\+\_\+variable char $\ast$ {\bfseries global\+\_\+program\+\_\+name}
+\item 
+\mbox{\Hypertarget{main_8c_ae5f53ba8ee8e26ef1fa4328579fa080f}\label{main_8c_ae5f53ba8ee8e26ef1fa4328579fa080f}} 
+global\+\_\+variable B32 {\bfseries global\+\_\+game\+\_\+is\+\_\+running}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main engine source. 
+
+This file implements the core engine and uses all the various other subsystems in an orderly manner.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a74a92912e6b802e8b37e00a2bc35347e}\label{main_8c_a74a92912e6b802e8b37e00a2bc35347e}} 
+\index{main.c@{main.c}!SCRIPT\_FUNCTION\_GAME\_UPVALUE@{SCRIPT\_FUNCTION\_GAME\_UPVALUE}}
+\index{SCRIPT\_FUNCTION\_GAME\_UPVALUE@{SCRIPT\_FUNCTION\_GAME\_UPVALUE}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{SCRIPT\_FUNCTION\_GAME\_UPVALUE}{SCRIPT\_FUNCTION\_GAME\_UPVALUE}}
+{\footnotesize\ttfamily \#define S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+G\+A\+M\+E\+\_\+\+U\+P\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{F\+U\+NC }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{               \(\backslash\)}
+\DoxyCodeLine{                char *str = \#FUNC;                              \(\backslash\)}
+\DoxyCodeLine{                lua\_pushlightuserdata(game\_code, game\_code);    \(\backslash\)}
+\DoxyCodeLine{                lua\_pushcclosure(game\_code, FUNC, 1);           \(\backslash\)}
+\DoxyCodeLine{                lua\_setfield(game\_code, 1, \&(str[6]));          \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a512f03367359d9d8c4cde30a99d2d46c}\label{main_8c_a512f03367359d9d8c4cde30a99d2d46c}} 
+\index{main.c@{main.c}!SCRIPT\_FUNCTION\_NO\_UPVALUE@{SCRIPT\_FUNCTION\_NO\_UPVALUE}}
+\index{SCRIPT\_FUNCTION\_NO\_UPVALUE@{SCRIPT\_FUNCTION\_NO\_UPVALUE}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{SCRIPT\_FUNCTION\_NO\_UPVALUE}{SCRIPT\_FUNCTION\_NO\_UPVALUE}}
+{\footnotesize\ttfamily \#define S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+\_\+\+U\+P\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{F\+U\+NC }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{   \(\backslash\)}
+\DoxyCodeLine{        char *str = \#FUNC;                      \(\backslash\)}
+\DoxyCodeLine{        lua\_pushcclosure(game\_code, FUNC, 0);   \(\backslash\)}
+\DoxyCodeLine{        lua\_setfield(game\_code, 1, \&(str[6]));  \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a7a3b550f409d141ab0f44fc2a4051edf}\label{main_8c_a7a3b550f409d141ab0f44fc2a4051edf}} 
+\index{main.c@{main.c}!SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE@{SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}}
+\index{SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE@{SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}{SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}}
+{\footnotesize\ttfamily \#define S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+G\+A\+M\+E\+\_\+\+U\+P\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{F\+U\+NC }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{          \(\backslash\)}
+\DoxyCodeLine{                char *str = \#FUNC;                              \(\backslash\)}
+\DoxyCodeLine{                lua\_pushlightuserdata(game\_code, \&system);      \(\backslash\)}
+\DoxyCodeLine{                lua\_pushlightuserdata(game\_code, game\_code);    \(\backslash\)}
+\DoxyCodeLine{                lua\_pushcclosure(game\_code, FUNC, 2);           \(\backslash\)}
+\DoxyCodeLine{                lua\_setfield(game\_code, 1, \&(str[6]));          \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8c_a1dd90c151960b4f270be44351e87d9e5}\label{main_8c_a1dd90c151960b4f270be44351e87d9e5}} 
+\index{main.c@{main.c}!SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE@{SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}}
+\index{SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE@{SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}{SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}}
+{\footnotesize\ttfamily \#define S\+C\+R\+I\+P\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+U\+P\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{F\+U\+NC }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{               \(\backslash\)}
+\DoxyCodeLine{                char *str = \#FUNC;                              \(\backslash\)}
+\DoxyCodeLine{                lua\_pushlightuserdata(game\_code, \&system);      \(\backslash\)}
+\DoxyCodeLine{                lua\_pushcclosure(game\_code, FUNC, 1);           \(\backslash\)}
+\DoxyCodeLine{                lua\_setfield(game\_code, 1, \&(str[6]));          \(\backslash\)}
+\DoxyCodeLine{            \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{main_8c_a1dd08b48036f33b5c02a0818a94fcd05}\label{main_8c_a1dd08b48036f33b5c02a0818a94fcd05}} 
+\index{main.c@{main.c}!System@{System}}
+\index{System@{System}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{System}{System}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structSystem}{System}}  \mbox{\hyperlink{structSystem}{System}}}
+
+
+
+Structure that contains all the state of the engine. 
+
+This structure is used to maintain and communicate the state of the engine to its various subsystems. This struct, as a whole, can be thought to incorporate the global state of the program at any given moment. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_ae15c7a1542a828750c129bd8cd68b24b}\label{main_8c_ae15c7a1542a828750c129bd8cd68b24b}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily Sint main (\begin{DoxyParamCaption}\item[{Sint}]{argc,  }\item[{Char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Entry point of the program. 
+
+This function is the entry point into the program and brings together all the parts of the engine to make a coherent whole. It implements program initialization, main loop and destruction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command line parameters \\
+\hline
+{\em argv} & Array of command line parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return value of the program 
+\end{DoxyReturn}

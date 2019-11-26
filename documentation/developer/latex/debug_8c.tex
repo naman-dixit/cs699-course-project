@@ -1,0 +1,48 @@
+\hypertarget{debug_8c}{}\section{src/debug.c File Reference}
+\label{debug_8c}\index{src/debug.c@{src/debug.c}}
+
+
+Functions for debugging.  
+
+
+{\ttfamily \#include $<$execinfo.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{debug_8c_a2ed127ee3fe422f95420f138273e6da7}\label{debug_8c_a2ed127ee3fe422f95420f138273e6da7}} 
+\#define {\bfseries M\+A\+X\+\_\+\+S\+T\+A\+C\+K\+\_\+\+F\+R\+A\+M\+ES}~64
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{debug_8c_ae3271be1bbc9abec5de9d5ab07824c03}\label{debug_8c_ae3271be1bbc9abec5de9d5ab07824c03}} 
+internal\+\_\+function int {\bfseries debug\+\_\+\+Address\+To\+Line} (void $\ast$addr)
+\item 
+internal\+\_\+function void \mbox{\hyperlink{debug_8c_abac4875b7a41e3e302b0bfbd0a4bf8f4}{debug\+Print\+Call\+Stack\+Trace}} ()
+\begin{DoxyCompactList}\small\item\em Function to print stack trace for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for debugging. 
+
+These functions are used in debugging any runtime errors that maybe otherwise be hard to fix. Usually, these functions are used in tandem with logging system.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{debug_8c_abac4875b7a41e3e302b0bfbd0a4bf8f4}\label{debug_8c_abac4875b7a41e3e302b0bfbd0a4bf8f4}} 
+\index{debug.c@{debug.c}!debugPrintCallStackTrace@{debugPrintCallStackTrace}}
+\index{debugPrintCallStackTrace@{debugPrintCallStackTrace}!debug.c@{debug.c}}
+\subsubsection{\texorpdfstring{debugPrintCallStackTrace()}{debugPrintCallStackTrace()}}
+{\footnotesize\ttfamily internal\+\_\+function void debug\+Print\+Call\+Stack\+Trace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to print stack trace for debugging. 
+
+This function print the stack trace for the current execution state of program. It skip the first couple of stack frames and also skip the last frame as it usually contains junk. 

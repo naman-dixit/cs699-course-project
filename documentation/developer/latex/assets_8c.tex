@@ -1,0 +1,119 @@
+\hypertarget{assets_8c}{}\section{src/assets.c File Reference}
+\label{assets_8c}\index{src/assets.c@{src/assets.c}}
+
+
+Functions for assets loading.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function B32 \mbox{\hyperlink{assets_8c_ac6677a2a5d23a8b1a46fed5c51e31f0c}{asset\+Load\+Shader}} (char $\ast$vertex\+\_\+path, char $\ast$fragment\+\_\+path, G\+Luint $\ast$program)
+\begin{DoxyCompactList}\small\item\em This function load the G\+L\+SL shaders assets for visual effetcs. \end{DoxyCompactList}\item 
+internal\+\_\+function B32 \mbox{\hyperlink{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}{asset\+Load\+Script}} (lua\+\_\+\+State $\ast$game, char $\ast$script\+\_\+path)
+\begin{DoxyCompactList}\small\item\em This function load the Lua script for gameplay code. \end{DoxyCompactList}\item 
+internal\+\_\+function B32 \mbox{\hyperlink{assets_8c_adbb430a75766f2eb005864f854a6d831}{asset\+Load\+True\+Type\+Font}} (Char $\ast$font\+\_\+path, U32 font\+\_\+size, Char $\ast$vert\+\_\+path, Char $\ast$frag\+\_\+path, U32 bitmap\+\_\+width, U32 bitmap\+\_\+height, U32 char\+\_\+first, U32 char\+\_\+num, G\+Luint vao, G\+Luint vbo, stbtt\+\_\+bakedchar $\ast$$\ast$baked\+\_\+char, G\+Luint $\ast$program, G\+Luint $\ast$texture)
+\begin{DoxyCompactList}\small\item\em This function load a T\+TF font and bakes it into a bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for assets loading. 
+
+This file contains the functions used for loading various files containing data used in the running of this game. These files are often called assets in the the parlance of game development.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}\label{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}} 
+\index{assets.c@{assets.c}!assetLoadScript@{assetLoadScript}}
+\index{assetLoadScript@{assetLoadScript}!assets.c@{assets.c}}
+\subsubsection{\texorpdfstring{assetLoadScript()}{assetLoadScript()}}
+{\footnotesize\ttfamily internal\+\_\+function B32 asset\+Load\+Script (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{game,  }\item[{char $\ast$}]{script\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+This function load the Lua script for gameplay code. 
+
+It reads the Lua script file at {\ttfamily script\+\_\+path} and compiles it into a Lua context {\ttfamily game}. If any errors occur during compilation, it also takes care of them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The Lua context in which the scripts will be run \\
+\hline
+{\em script\+\_\+path} & Path of Lua script source file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{assets_8c_ac6677a2a5d23a8b1a46fed5c51e31f0c}\label{assets_8c_ac6677a2a5d23a8b1a46fed5c51e31f0c}} 
+\index{assets.c@{assets.c}!assetLoadShader@{assetLoadShader}}
+\index{assetLoadShader@{assetLoadShader}!assets.c@{assets.c}}
+\subsubsection{\texorpdfstring{assetLoadShader()}{assetLoadShader()}}
+{\footnotesize\ttfamily internal\+\_\+function B32 asset\+Load\+Shader (\begin{DoxyParamCaption}\item[{char $\ast$}]{vertex\+\_\+path,  }\item[{char $\ast$}]{fragment\+\_\+path,  }\item[{G\+Luint $\ast$}]{program }\end{DoxyParamCaption})}
+
+
+
+This function load the G\+L\+SL shaders assets for visual effetcs. 
+
+It reads the vertex shader stored at {\ttfamily vertex\+\_\+path} and fragment shader stored at {\ttfamily fragement\+\_\+path} and compiles the into a single shader program. Before exiting it frees up the vertex and fragment source.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+\_\+path} & Path of vertex shader \\
+\hline
+{\em fragment\+\_\+path} & Path of fragment shader \\
+\hline
+{\em program} & Used to return the G\+L\+SL program handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+success/failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{assets_8c_adbb430a75766f2eb005864f854a6d831}\label{assets_8c_adbb430a75766f2eb005864f854a6d831}} 
+\index{assets.c@{assets.c}!assetLoadTrueTypeFont@{assetLoadTrueTypeFont}}
+\index{assetLoadTrueTypeFont@{assetLoadTrueTypeFont}!assets.c@{assets.c}}
+\subsubsection{\texorpdfstring{assetLoadTrueTypeFont()}{assetLoadTrueTypeFont()}}
+{\footnotesize\ttfamily internal\+\_\+function B32 asset\+Load\+True\+Type\+Font (\begin{DoxyParamCaption}\item[{Char $\ast$}]{font\+\_\+path,  }\item[{U32}]{font\+\_\+size,  }\item[{Char $\ast$}]{vert\+\_\+path,  }\item[{Char $\ast$}]{frag\+\_\+path,  }\item[{U32}]{bitmap\+\_\+width,  }\item[{U32}]{bitmap\+\_\+height,  }\item[{U32}]{char\+\_\+first,  }\item[{U32}]{char\+\_\+num,  }\item[{G\+Luint}]{vao,  }\item[{G\+Luint}]{vbo,  }\item[{stbtt\+\_\+bakedchar $\ast$$\ast$}]{baked\+\_\+char,  }\item[{G\+Luint $\ast$}]{program,  }\item[{G\+Luint $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+This function load a T\+TF font and bakes it into a bitmap. 
+
+It load the font file and using stb\+\_\+truetype library, bakes the vector font into a bitmap that can be rendered using Open\+GL\textquotesingle{}s native capabilities to render textured quads.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+\_\+path} & Path of the font file \\
+\hline
+{\em font\+\_\+size} & Point size of rendered font \\
+\hline
+{\em vert\+\_\+path} & Path of vertex shader used for text rendering \\
+\hline
+{\em frag\+\_\+path} & Path of fragment shader used for text rendering \\
+\hline
+{\em bitmap\+\_\+width} & Width opf baked bitmap \\
+\hline
+{\em bitmap\+\_\+height} & Heifght of baked bitmap \\
+\hline
+{\em char\+\_\+first} & First renderable character \\
+\hline
+{\em char\+\_\+num} & Total number of renderable characters \\
+\hline
+{\em vao} & Vertex Array Object \\
+\hline
+{\em vbo} & Vertex Buffer Object \\
+\hline
+{\em baked\+\_\+char} & Baked bitmap \\
+\hline
+{\em program} & Returns handle for compiled shader \\
+\hline
+{\em texture} & Returns handle for texture stored G\+PU side\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}

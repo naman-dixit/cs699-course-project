@@ -1,0 +1,71 @@
+\hypertarget{structSystem_1_1System__Audio}{}\section{System\+::System\+\_\+\+Audio Struct Reference}
+\label{structSystem_1_1System__Audio}\index{System::System\_Audio@{System::System\_Audio}}
+
+
+Structure that contains the state of the audio subsystem.  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Audio\+Device\+ID \mbox{\hyperlink{structSystem_1_1System__Audio_a5fd57aaf9c13e4cbc7912cf453881874}{audio\+\_\+device}}
+\item 
+S\+D\+L\+\_\+\+Audio\+Spec \mbox{\hyperlink{structSystem_1_1System__Audio_ae933f9705975468958251db45a310ab4}{audio\+\_\+spec}}
+\item 
+S16 $\ast$ \mbox{\hyperlink{structSystem_1_1System__Audio_a7a94925579c2412fd259b8d73e4c90f4}{audio\+\_\+buffer}}
+\item 
+U32 \mbox{\hyperlink{structSystem_1_1System__Audio_adac90b1a0e62afd66ea2967a0b5a234d}{bytes\+\_\+per\+\_\+sample}}
+\item 
+U32 \mbox{\hyperlink{structSystem_1_1System__Audio_a6e606e2379d0c5f83e931542f4c0bad3}{target\+\_\+queue\+\_\+bytes}}
+\item 
+U32 \mbox{\hyperlink{structSystem_1_1System__Audio_ab8696100d5f38507ff5e91b7194747ca}{volume}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure that contains the state of the audio subsystem. 
+
+This contains all the handles for the audio device, etc. as well as the parameters of audio such as sampling rate that are used for the playing of audio. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structSystem_1_1System__Audio_a7a94925579c2412fd259b8d73e4c90f4}\label{structSystem_1_1System__Audio_a7a94925579c2412fd259b8d73e4c90f4}} 
+\index{System::System\_Audio@{System::System\_Audio}!audio\_buffer@{audio\_buffer}}
+\index{audio\_buffer@{audio\_buffer}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{audio\_buffer}{audio\_buffer}}
+{\footnotesize\ttfamily S16$\ast$ System\+::\+System\+\_\+\+Audio\+::audio\+\_\+buffer}
+
+Memory buffer to store sound sample data \mbox{\Hypertarget{structSystem_1_1System__Audio_a5fd57aaf9c13e4cbc7912cf453881874}\label{structSystem_1_1System__Audio_a5fd57aaf9c13e4cbc7912cf453881874}} 
+\index{System::System\_Audio@{System::System\_Audio}!audio\_device@{audio\_device}}
+\index{audio\_device@{audio\_device}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{audio\_device}{audio\_device}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Audio\+Device\+ID System\+::\+System\+\_\+\+Audio\+::audio\+\_\+device}
+
+Handle to audio device \mbox{\Hypertarget{structSystem_1_1System__Audio_ae933f9705975468958251db45a310ab4}\label{structSystem_1_1System__Audio_ae933f9705975468958251db45a310ab4}} 
+\index{System::System\_Audio@{System::System\_Audio}!audio\_spec@{audio\_spec}}
+\index{audio\_spec@{audio\_spec}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{audio\_spec}{audio\_spec}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Audio\+Spec System\+::\+System\+\_\+\+Audio\+::audio\+\_\+spec}
+
+Specifications of the audio device \mbox{\Hypertarget{structSystem_1_1System__Audio_adac90b1a0e62afd66ea2967a0b5a234d}\label{structSystem_1_1System__Audio_adac90b1a0e62afd66ea2967a0b5a234d}} 
+\index{System::System\_Audio@{System::System\_Audio}!bytes\_per\_sample@{bytes\_per\_sample}}
+\index{bytes\_per\_sample@{bytes\_per\_sample}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{bytes\_per\_sample}{bytes\_per\_sample}}
+{\footnotesize\ttfamily U32 System\+::\+System\+\_\+\+Audio\+::bytes\+\_\+per\+\_\+sample}
+
+Size of each sample in bytes \mbox{\Hypertarget{structSystem_1_1System__Audio_a6e606e2379d0c5f83e931542f4c0bad3}\label{structSystem_1_1System__Audio_a6e606e2379d0c5f83e931542f4c0bad3}} 
+\index{System::System\_Audio@{System::System\_Audio}!target\_queue\_bytes@{target\_queue\_bytes}}
+\index{target\_queue\_bytes@{target\_queue\_bytes}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{target\_queue\_bytes}{target\_queue\_bytes}}
+{\footnotesize\ttfamily U32 System\+::\+System\+\_\+\+Audio\+::target\+\_\+queue\+\_\+bytes}
+
+Latency of audio stream in bytes \mbox{\Hypertarget{structSystem_1_1System__Audio_ab8696100d5f38507ff5e91b7194747ca}\label{structSystem_1_1System__Audio_ab8696100d5f38507ff5e91b7194747ca}} 
+\index{System::System\_Audio@{System::System\_Audio}!volume@{volume}}
+\index{volume@{volume}!System::System\_Audio@{System::System\_Audio}}
+\subsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily U32 System\+::\+System\+\_\+\+Audio\+::volume}
+
+Sound\textquotesingle{}s loudness level 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{main_8c}{main.\+c}}\end{DoxyCompactItemize}

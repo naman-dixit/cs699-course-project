@@ -1,0 +1,67 @@
+\hypertarget{assets__script_8c}{}\section{src/assets\+\_\+script.c File Reference}
+\label{assets__script_8c}\index{src/assets\_script.c@{src/assets\_script.c}}
+
+
+Lua functions for asset loading.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function Sint \mbox{\hyperlink{assets__script_8c_a72095dbaf6460453590cc4c4f272f998}{script\+Asset\+Load\+Script}} (lua\+\_\+\+State $\ast$l)
+\begin{DoxyCompactList}\small\item\em Lua injected function which calls \mbox{\hyperlink{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}{asset\+Load\+Script}}. \end{DoxyCompactList}\item 
+internal\+\_\+function int \mbox{\hyperlink{assets__script_8c_a1aeaa13ff9bfb0832191e954c05e3603}{script\+Asset\+Load\+True\+Type\+Font}} (lua\+\_\+\+State $\ast$l)
+\begin{DoxyCompactList}\small\item\em Lua injected function which calls \mbox{\hyperlink{assets_8c_adbb430a75766f2eb005864f854a6d831}{asset\+Load\+True\+Type\+Font}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lua functions for asset loading. 
+
+These functions are called from Lua and are used to hook into the asset loader that is implemented in the engine.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{assets__script_8c_a72095dbaf6460453590cc4c4f272f998}\label{assets__script_8c_a72095dbaf6460453590cc4c4f272f998}} 
+\index{assets\_script.c@{assets\_script.c}!scriptAssetLoadScript@{scriptAssetLoadScript}}
+\index{scriptAssetLoadScript@{scriptAssetLoadScript}!assets\_script.c@{assets\_script.c}}
+\subsubsection{\texorpdfstring{scriptAssetLoadScript()}{scriptAssetLoadScript()}}
+{\footnotesize\ttfamily internal\+\_\+function Sint script\+Asset\+Load\+Script (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Lua injected function which calls \mbox{\hyperlink{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}{asset\+Load\+Script}}. 
+
+This function is called from Lua and is used to call into \mbox{\hyperlink{assets_8c_aaedf1cf032a4a80132fcbb91a3d702ff}{asset\+Load\+Script}} using proper parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{assets__script_8c_a1aeaa13ff9bfb0832191e954c05e3603}\label{assets__script_8c_a1aeaa13ff9bfb0832191e954c05e3603}} 
+\index{assets\_script.c@{assets\_script.c}!scriptAssetLoadTrueTypeFont@{scriptAssetLoadTrueTypeFont}}
+\index{scriptAssetLoadTrueTypeFont@{scriptAssetLoadTrueTypeFont}!assets\_script.c@{assets\_script.c}}
+\subsubsection{\texorpdfstring{scriptAssetLoadTrueTypeFont()}{scriptAssetLoadTrueTypeFont()}}
+{\footnotesize\ttfamily internal\+\_\+function int script\+Asset\+Load\+True\+Type\+Font (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Lua injected function which calls \mbox{\hyperlink{assets_8c_adbb430a75766f2eb005864f854a6d831}{asset\+Load\+True\+Type\+Font}}. 
+
+This function is called from Lua and is used to call into \mbox{\hyperlink{assets_8c_adbb430a75766f2eb005864f854a6d831}{asset\+Load\+True\+Type\+Font}} using proper parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}

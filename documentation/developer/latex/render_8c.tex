@@ -1,0 +1,77 @@
+\hypertarget{render_8c}{}\section{src/render.c File Reference}
+\label{render_8c}\index{src/render.c@{src/render.c}}
+
+
+Functions for rendering.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function B32 \mbox{\hyperlink{render_8c_a04c6156b9c7fe9ed75023d454b354123}{render\+Text}} (G\+Luint vao, G\+Luint vbo, G\+Luint texture, G\+Luint program, char char\+\_\+first, char char\+\_\+num, U32 bitmap\+\_\+width, U32 bitmap\+\_\+height, stbtt\+\_\+bakedchar $\ast$baked\+\_\+char, const char $\ast$text, Vec3 screen\+\_\+pos, Vec3 color, F32 scale\+\_\+factor, F32 x\+\_\+scaling, F32 $\ast$x\+\_\+ret, F32 $\ast$y\+\_\+min\+\_\+ret, F32 $\ast$y\+\_\+max\+\_\+ret)
+\begin{DoxyCompactList}\small\item\em Function to render text using Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for rendering. 
+
+These functions are used for performing the rendering using the Open\+GL A\+PI. In the current application, they are only used for 2D rendering of text, as well as applying various postprocessing effects using shaders.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{render_8c_a04c6156b9c7fe9ed75023d454b354123}\label{render_8c_a04c6156b9c7fe9ed75023d454b354123}} 
+\index{render.c@{render.c}!renderText@{renderText}}
+\index{renderText@{renderText}!render.c@{render.c}}
+\subsubsection{\texorpdfstring{renderText()}{renderText()}}
+{\footnotesize\ttfamily internal\+\_\+function B32 render\+Text (\begin{DoxyParamCaption}\item[{G\+Luint}]{vao,  }\item[{G\+Luint}]{vbo,  }\item[{G\+Luint}]{texture,  }\item[{G\+Luint}]{program,  }\item[{char}]{char\+\_\+first,  }\item[{char}]{char\+\_\+num,  }\item[{U32}]{bitmap\+\_\+width,  }\item[{U32}]{bitmap\+\_\+height,  }\item[{stbtt\+\_\+bakedchar $\ast$}]{baked\+\_\+char,  }\item[{const char $\ast$}]{text,  }\item[{Vec3}]{screen\+\_\+pos,  }\item[{Vec3}]{color,  }\item[{F32}]{scale\+\_\+factor,  }\item[{F32}]{x\+\_\+scaling,  }\item[{F32 $\ast$}]{x\+\_\+ret,  }\item[{F32 $\ast$}]{y\+\_\+min\+\_\+ret,  }\item[{F32 $\ast$}]{y\+\_\+max\+\_\+ret }\end{DoxyParamCaption})}
+
+
+
+Function to render text using Open\+GL. 
+
+This function is used to render text through Open\+GL A\+PI. It uses shaders to render text in different font and color in the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vao} & Vertex Array Object \\
+\hline
+{\em vbo} & Vertex Buffer Object \\
+\hline
+{\em baked\+\_\+char} & Baked bitmap font \\
+\hline
+{\em program} & Handle to shader program \\
+\hline
+{\em texture} & Handle to font texture \\
+\hline
+{\em bitmap\+\_\+width} & Width of font bitmap \\
+\hline
+{\em bitmap\+\_\+height} & Height of font bitmap \\
+\hline
+{\em char\+\_\+first} & First renderable character \\
+\hline
+{\em char\+\_\+num} & Total number of renderable characters \\
+\hline
+{\em text} & Text which needs to be rendered \\
+\hline
+{\em screen\+\_\+pos} & Screen space position of rendered text \\
+\hline
+{\em color} & Color of rendered text \\
+\hline
+{\em scale\+\_\+factor} & Scaling factor, to be applied on quads \\
+\hline
+{\em x\+\_\+scaling} & Horizontal scaling constant used in font baking process \\
+\hline
+{\em x\+\_\+ret} & Returns the width of rendered text in screen space \\
+\hline
+{\em y\+\_\+min\+\_\+ret} & Returns height of rendered text above baseline in screen space \\
+\hline
+{\em y\+\_\+max\+\_\+ret} & Returns depth of rendered text below baseline in screen space\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}

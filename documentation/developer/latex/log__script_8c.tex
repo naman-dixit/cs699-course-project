@@ -1,0 +1,45 @@
+\hypertarget{log__script_8c}{}\section{src/log\+\_\+script.c File Reference}
+\label{log__script_8c}\index{src/log\_script.c@{src/log\_script.c}}
+
+
+Lua functions for logging.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function int \mbox{\hyperlink{log__script_8c_a9b2d1c8aa2d2059b362162e4732e0535}{script\+Log}} (lua\+\_\+\+State $\ast$l)
+\begin{DoxyCompactList}\small\item\em Lua injected function which calls \mbox{\hyperlink{log_8c_a474db88ab37ec204ad2cedca469634d2}{log\+Console}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lua functions for logging. 
+
+These functions are called from Lua and are used to hook into the logger that is implemented in the engine.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{log__script_8c_a9b2d1c8aa2d2059b362162e4732e0535}\label{log__script_8c_a9b2d1c8aa2d2059b362162e4732e0535}} 
+\index{log\_script.c@{log\_script.c}!scriptLog@{scriptLog}}
+\index{scriptLog@{scriptLog}!log\_script.c@{log\_script.c}}
+\subsubsection{\texorpdfstring{scriptLog()}{scriptLog()}}
+{\footnotesize\ttfamily internal\+\_\+function int script\+Log (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Lua injected function which calls \mbox{\hyperlink{log_8c_a474db88ab37ec204ad2cedca469634d2}{log\+Console}}. 
+
+This function is called from Lua and is used to call into \mbox{\hyperlink{log_8c_a474db88ab37ec204ad2cedca469634d2}{log\+Console}} using proper parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}

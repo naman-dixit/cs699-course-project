@@ -1,0 +1,112 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}System Struct Reference}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Audio Struct Reference}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Member Data Documentation}{6}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}audio\_buffer}{6}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}audio\_device}{6}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}audio\_spec}{6}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}bytes\_per\_sample}{6}{subsubsection.3.2.2.4}
+\contentsline {subsubsection}{\numberline {3.2.2.5}target\_queue\_bytes}{7}{subsubsection.3.2.2.5}
+\contentsline {subsubsection}{\numberline {3.2.2.6}volume}{7}{subsubsection.3.2.2.6}
+\contentsline {section}{\numberline {3.3}System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Controls Struct Reference}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{7}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Member Data Documentation}{7}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}keyboard}{7}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}left}{8}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}middle}{8}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}mouse}{8}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}right}{8}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}x}{8}{subsubsection.3.3.2.6}
+\contentsline {subsubsection}{\numberline {3.3.2.7}y}{8}{subsubsection.3.3.2.7}
+\contentsline {section}{\numberline {3.4}System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Time Struct Reference}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Member Data Documentation}{9}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}last\_counter}{9}{subsubsection.3.4.2.1}
+\contentsline {section}{\numberline {3.5}System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}::System\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window Struct Reference}{9}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{9}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Member Data Documentation}{10}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}crt\_shader}{10}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}gl\_context}{10}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}height}{10}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}luabuffer}{10}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}luabuffer\_texture}{10}{subsubsection.3.5.2.5}
+\contentsline {subsubsection}{\numberline {3.5.2.6}quad\_vao}{10}{subsubsection.3.5.2.6}
+\contentsline {subsubsection}{\numberline {3.5.2.7}width}{10}{subsubsection.3.5.2.7}
+\contentsline {subsubsection}{\numberline {3.5.2.8}window}{11}{subsubsection.3.5.2.8}
+\contentsline {subsubsection}{\numberline {3.5.2.9}xbloom\_shader}{11}{subsubsection.3.5.2.9}
+\contentsline {subsubsection}{\numberline {3.5.2.10}xbloombuffer}{11}{subsubsection.3.5.2.10}
+\contentsline {subsubsection}{\numberline {3.5.2.11}xbloombuffer\_texture}{11}{subsubsection.3.5.2.11}
+\contentsline {chapter}{\numberline {4}File Documentation}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}src/assets.c File Reference}{13}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{13}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{13}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}assetLoadScript()}{13}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}assetLoadShader()}{14}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}assetLoadTrueTypeFont()}{14}{subsubsection.4.1.2.3}
+\contentsline {section}{\numberline {4.2}src/assets\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}script.c File Reference}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{16}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}scriptAssetLoadScript()}{16}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}scriptAssetLoadTrueTypeFont()}{16}{subsubsection.4.2.2.2}
+\contentsline {section}{\numberline {4.3}src/debug.c File Reference}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{17}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{17}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}debugPrintCallStackTrace()}{17}{subsubsection.4.3.2.1}
+\contentsline {section}{\numberline {4.4}src/event.c File Reference}{17}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{18}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Function Documentation}{18}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}eventKeyboard()}{18}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}eventText()}{18}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}eventTextControl()}{19}{subsubsection.4.4.2.3}
+\contentsline {section}{\numberline {4.5}src/file.c File Reference}{19}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{19}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{19}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}fileRead()}{19}{subsubsection.4.5.2.1}
+\contentsline {section}{\numberline {4.6}src/log.c File Reference}{20}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{20}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Enumeration Type Documentation}{20}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Log\_Channel}{21}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Log\_Level}{21}{subsubsection.4.6.2.2}
+\contentsline {subsection}{\numberline {4.6.3}Function Documentation}{21}{subsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.3.1}logConsole()}{21}{subsubsection.4.6.3.1}
+\contentsline {subsubsection}{\numberline {4.6.3.2}logGLDebugCallback()}{21}{subsubsection.4.6.3.2}
+\contentsline {section}{\numberline {4.7}src/log\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}script.c File Reference}{22}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{22}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{22}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}scriptLog()}{22}{subsubsection.4.7.2.1}
+\contentsline {section}{\numberline {4.8}src/main.c File Reference}{23}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{24}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Macro Definition Documentation}{24}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}SCRIPT\_FUNCTION\_GAME\_UPVALUE}{24}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}SCRIPT\_FUNCTION\_NO\_UPVALUE}{25}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}SCRIPT\_FUNCTION\_SYSTEM\_GAME\_UPVALUE}{25}{subsubsection.4.8.2.3}
+\contentsline {subsubsection}{\numberline {4.8.2.4}SCRIPT\_FUNCTION\_SYSTEM\_UPVALUE}{25}{subsubsection.4.8.2.4}
+\contentsline {subsection}{\numberline {4.8.3}Typedef Documentation}{25}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}System}{25}{subsubsection.4.8.3.1}
+\contentsline {subsection}{\numberline {4.8.4}Function Documentation}{26}{subsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.4.1}main()}{26}{subsubsection.4.8.4.1}
+\contentsline {section}{\numberline {4.9}src/opengl.c File Reference}{26}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{26}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Function Documentation}{26}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}openglShaderCreate()}{27}{subsubsection.4.9.2.1}
+\contentsline {section}{\numberline {4.10}src/render.c File Reference}{27}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{27}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Function Documentation}{27}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}renderText()}{28}{subsubsection.4.10.2.1}
+\contentsline {section}{\numberline {4.11}src/render\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}script.c File Reference}{28}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{29}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Function Documentation}{29}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}scriptRenderGetTextDimensions()}{29}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}scriptRenderText()}{29}{subsubsection.4.11.2.2}
+\contentsline {section}{\numberline {4.12}src/time.c File Reference}{30}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{30}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Function Documentation}{30}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}timeMicrosecondsElapsed()}{30}{subsubsection.4.12.2.1}
+\contentsline {chapter}{Index}{33}{section*.25}

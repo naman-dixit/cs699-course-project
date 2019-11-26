@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+if [ -z ${BuildPlatform+x} ]; then
+    BuildPlatform=linux
+fi
+
+if [ -z ${BuildArchitecture+x} ]; then
+    BuildArchitecture=x64
+fi
+
+ProjectRoot=$(dirname "$0") # Directory in which the script is located
+BuildDirectory="${ProjectRoot}/bin/${BuildPlatform}/${BuildArchitecture}"
+mkdir -p ${BuildDirectory}
+echo "Entering directory \`$(pwd)'"
+
+# .....................................................................
+# BUILD
+# `````````````````````````````````````````````````````````````````````
+
+Source=${ProjectRoot}/source/main.c
+Target=game
+
+if [ -f "${Target}" ]; then
+    rm ${Target}
+fi
+
+# COMPILING ========================================================
+
+Compiler="clang"
+CompilerFlags="-iquote ${ProjectRoot}/source -g3 -msse2 -O0 -fno-strict-aliasing -fwrapv -msse2"
+LanguageFlags="--std=c11 -DBUILD_INTERNAL -DBUILD_SLOW -D_POSIX_C_SOURCE=200809L"
+WarningFlags="-Weverything -Wpedantic -pedantic-errors -Werror \
+              -Wno-missing-braces -Wno-unused-function -Wno-c++98-compat \
+              -Wno-gnu-zero-variadic-macro-arguments -Wno-missing-field-initializers \
+              -Wno-extra-semi-stmt -Wno-unused-macros \
+              -Wno-incompatible-pointer-types-discards-qualifiers \
+              -Wno-bad-function-cast"
+LinkerFlags="-o bin/${BuildPlatform}/${BuildArchitecture}/${Target} \
+             -Lbin/${BuildPlatform}/${BuildArchitecture} \
+             -Wl,-rpath=\$ORIGIN -Wl,-z,origin -Wl,--enable-new-dtags \
+             -static-libgcc -lm -ldl \
+             -l:libSDL2-2.0.so.0 bin/linux/x64/liblua5.1.so"
+
+${Compiler} ${CompilerFlags} ${LanguageFlags} ${WarningFlags} ${Source} ${LinkerFlags}

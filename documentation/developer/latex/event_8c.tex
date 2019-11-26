@@ -1,0 +1,88 @@
+\hypertarget{event_8c}{}\section{src/event.c File Reference}
+\label{event_8c}\index{src/event.c@{src/event.c}}
+
+
+Functions for event handling.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function void \mbox{\hyperlink{event_8c_a919634d3917c8c7edaff5aa070841fee}{event\+Keyboard}} (lua\+\_\+\+State $\ast$l, char $\ast$key, char $\ast$state)
+\begin{DoxyCompactList}\small\item\em Function to send the key being pressed to Lua. \end{DoxyCompactList}\item 
+internal\+\_\+function void \mbox{\hyperlink{event_8c_a7383532252d27162444aa856b2428c49}{event\+Text}} (lua\+\_\+\+State $\ast$l, const char $\ast$const text)
+\begin{DoxyCompactList}\small\item\em Function to send the text to Lua after it has been typed. \end{DoxyCompactList}\item 
+internal\+\_\+function void \mbox{\hyperlink{event_8c_aa48644c4d3d89a1f314f6bbf252b5c8a}{event\+Text\+Control}} (lua\+\_\+\+State $\ast$l, const char $\ast$const control)
+\begin{DoxyCompactList}\small\item\em Function to swend the control characters beeing pressed to Lua. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for event handling. 
+
+These functions are used in handling operating system events generated due to user interactionss with the program. Since the actual event processing happens in Lua code, we just transfer these events to a Lua context.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{event_8c_a919634d3917c8c7edaff5aa070841fee}\label{event_8c_a919634d3917c8c7edaff5aa070841fee}} 
+\index{event.c@{event.c}!eventKeyboard@{eventKeyboard}}
+\index{eventKeyboard@{eventKeyboard}!event.c@{event.c}}
+\subsubsection{\texorpdfstring{eventKeyboard()}{eventKeyboard()}}
+{\footnotesize\ttfamily internal\+\_\+function void event\+Keyboard (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l,  }\item[{char $\ast$}]{key,  }\item[{char $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Function to send the key being pressed to Lua. 
+
+This fucntion sends the \char`\"{}\+Key Pressed\char`\"{} events to Lua game code using neccessary lua function to perform corresponding action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context \\
+\hline
+{\em key} & Name of pressed key \\
+\hline
+{\em state} & The state of key (up/down/held) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{event_8c_a7383532252d27162444aa856b2428c49}\label{event_8c_a7383532252d27162444aa856b2428c49}} 
+\index{event.c@{event.c}!eventText@{eventText}}
+\index{eventText@{eventText}!event.c@{event.c}}
+\subsubsection{\texorpdfstring{eventText()}{eventText()}}
+{\footnotesize\ttfamily internal\+\_\+function void event\+Text (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l,  }\item[{const char $\ast$const}]{text }\end{DoxyParamCaption})}
+
+
+
+Function to send the text to Lua after it has been typed. 
+
+This function gets the text which was typed and call neccessary lua function to send it to the Lua context..
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context \\
+\hline
+{\em text} & Typed text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{event_8c_aa48644c4d3d89a1f314f6bbf252b5c8a}\label{event_8c_aa48644c4d3d89a1f314f6bbf252b5c8a}} 
+\index{event.c@{event.c}!eventTextControl@{eventTextControl}}
+\index{eventTextControl@{eventTextControl}!event.c@{event.c}}
+\subsubsection{\texorpdfstring{eventTextControl()}{eventTextControl()}}
+{\footnotesize\ttfamily internal\+\_\+function void event\+Text\+Control (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l,  }\item[{const char $\ast$const}]{control }\end{DoxyParamCaption})}
+
+
+
+Function to swend the control characters beeing pressed to Lua. 
+
+This function sends control characters (e.\+g. E\+N\+T\+ER, B\+A\+C\+K\+S\+P\+A\+CE, etc.) to Lua which are used to perform special actions in game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context \\
+\hline
+{\em control} & Name of special character \\
+\hline
+\end{DoxyParams}

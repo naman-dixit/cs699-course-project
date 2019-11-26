@@ -1,0 +1,111 @@
+\hypertarget{structSystem_1_1System__Window}{}\section{System\+::System\+\_\+\+Window Struct Reference}
+\label{structSystem_1_1System__Window}\index{System::System\_Window@{System::System\_Window}}
+
+
+Structure that contains the state of the windowing subsystem.  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{structSystem_1_1System__Window_a76d0075f1fa69135e184f9a6d24d4576}{window}}
+\item 
+S\+D\+L\+\_\+\+G\+L\+Context \mbox{\hyperlink{structSystem_1_1System__Window_a4c7a2e74ca760738cf797ada527e93b0}{gl\+\_\+context}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a389eed5663869ef9186fa3e04cc5760d}{quad\+\_\+vao}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_ac9845de36f533a566aa53348abc06b33}{luabuffer}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a1d16659ce8890a3d98f03c3a41f0bb56}{luabuffer\+\_\+texture}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a1b17d691077fc954bdfe68e7a178909f}{xbloombuffer}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a89a403f3e9c28d8595caee8e22a9f958}{xbloombuffer\+\_\+texture}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a83dc699de83660e0a09e80844ded80b2}{xbloom\+\_\+shader}}
+\item 
+G\+Luint \mbox{\hyperlink{structSystem_1_1System__Window_a66199a381d344b5e4fa30a8096688db5}{crt\+\_\+shader}}
+\item 
+S32 \mbox{\hyperlink{structSystem_1_1System__Window_afb21eca26e1c840c44975b2c02f30ad5}{width}}
+\item 
+S32 \mbox{\hyperlink{structSystem_1_1System__Window_a56dd8dbf992cd3454c0f0d29ec839f8e}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure that contains the state of the windowing subsystem. 
+
+This contains all the handles for the window, framebuffers, etc. that are used for the display of the game. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structSystem_1_1System__Window_a66199a381d344b5e4fa30a8096688db5}\label{structSystem_1_1System__Window_a66199a381d344b5e4fa30a8096688db5}} 
+\index{System::System\_Window@{System::System\_Window}!crt\_shader@{crt\_shader}}
+\index{crt\_shader@{crt\_shader}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{crt\_shader}{crt\_shader}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::crt\+\_\+shader}
+
+Shader used to finally render to the screen \mbox{\Hypertarget{structSystem_1_1System__Window_a4c7a2e74ca760738cf797ada527e93b0}\label{structSystem_1_1System__Window_a4c7a2e74ca760738cf797ada527e93b0}} 
+\index{System::System\_Window@{System::System\_Window}!gl\_context@{gl\_context}}
+\index{gl\_context@{gl\_context}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{gl\_context}{gl\_context}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+G\+L\+Context System\+::\+System\+\_\+\+Window\+::gl\+\_\+context}
+
+Handle to Open\+GL context \mbox{\Hypertarget{structSystem_1_1System__Window_a56dd8dbf992cd3454c0f0d29ec839f8e}\label{structSystem_1_1System__Window_a56dd8dbf992cd3454c0f0d29ec839f8e}} 
+\index{System::System\_Window@{System::System\_Window}!height@{height}}
+\index{height@{height}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily S32 System\+::\+System\+\_\+\+Window\+::height}
+
+Height of the window \mbox{\Hypertarget{structSystem_1_1System__Window_ac9845de36f533a566aa53348abc06b33}\label{structSystem_1_1System__Window_ac9845de36f533a566aa53348abc06b33}} 
+\index{System::System\_Window@{System::System\_Window}!luabuffer@{luabuffer}}
+\index{luabuffer@{luabuffer}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{luabuffer}{luabuffer}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::luabuffer}
+
+Framebuffer into which the Lua code renders \mbox{\Hypertarget{structSystem_1_1System__Window_a1d16659ce8890a3d98f03c3a41f0bb56}\label{structSystem_1_1System__Window_a1d16659ce8890a3d98f03c3a41f0bb56}} 
+\index{System::System\_Window@{System::System\_Window}!luabuffer\_texture@{luabuffer\_texture}}
+\index{luabuffer\_texture@{luabuffer\_texture}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{luabuffer\_texture}{luabuffer\_texture}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::luabuffer\+\_\+texture}
+
+Texture associated with the \mbox{\hyperlink{structSystem_1_1System__Window_ac9845de36f533a566aa53348abc06b33}{luabuffer}} \mbox{\Hypertarget{structSystem_1_1System__Window_a389eed5663869ef9186fa3e04cc5760d}\label{structSystem_1_1System__Window_a389eed5663869ef9186fa3e04cc5760d}} 
+\index{System::System\_Window@{System::System\_Window}!quad\_vao@{quad\_vao}}
+\index{quad\_vao@{quad\_vao}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{quad\_vao}{quad\_vao}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::quad\+\_\+vao}
+
+Handle to the vertex array object associated with a quad \mbox{\Hypertarget{structSystem_1_1System__Window_afb21eca26e1c840c44975b2c02f30ad5}\label{structSystem_1_1System__Window_afb21eca26e1c840c44975b2c02f30ad5}} 
+\index{System::System\_Window@{System::System\_Window}!width@{width}}
+\index{width@{width}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily S32 System\+::\+System\+\_\+\+Window\+::width}
+
+Width of the window \mbox{\Hypertarget{structSystem_1_1System__Window_a76d0075f1fa69135e184f9a6d24d4576}\label{structSystem_1_1System__Window_a76d0075f1fa69135e184f9a6d24d4576}} 
+\index{System::System\_Window@{System::System\_Window}!window@{window}}
+\index{window@{window}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ System\+::\+System\+\_\+\+Window\+::window}
+
+Handle to the window \mbox{\Hypertarget{structSystem_1_1System__Window_a83dc699de83660e0a09e80844ded80b2}\label{structSystem_1_1System__Window_a83dc699de83660e0a09e80844ded80b2}} 
+\index{System::System\_Window@{System::System\_Window}!xbloom\_shader@{xbloom\_shader}}
+\index{xbloom\_shader@{xbloom\_shader}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{xbloom\_shader}{xbloom\_shader}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::xbloom\+\_\+shader}
+
+Shader associated with the \mbox{\hyperlink{structSystem_1_1System__Window_a1b17d691077fc954bdfe68e7a178909f}{xbloombuffer}} \mbox{\Hypertarget{structSystem_1_1System__Window_a1b17d691077fc954bdfe68e7a178909f}\label{structSystem_1_1System__Window_a1b17d691077fc954bdfe68e7a178909f}} 
+\index{System::System\_Window@{System::System\_Window}!xbloombuffer@{xbloombuffer}}
+\index{xbloombuffer@{xbloombuffer}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{xbloombuffer}{xbloombuffer}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::xbloombuffer}
+
+Intermediate framebuffer with horizontal bloom effect \mbox{\Hypertarget{structSystem_1_1System__Window_a89a403f3e9c28d8595caee8e22a9f958}\label{structSystem_1_1System__Window_a89a403f3e9c28d8595caee8e22a9f958}} 
+\index{System::System\_Window@{System::System\_Window}!xbloombuffer\_texture@{xbloombuffer\_texture}}
+\index{xbloombuffer\_texture@{xbloombuffer\_texture}!System::System\_Window@{System::System\_Window}}
+\subsubsection{\texorpdfstring{xbloombuffer\_texture}{xbloombuffer\_texture}}
+{\footnotesize\ttfamily G\+Luint System\+::\+System\+\_\+\+Window\+::xbloombuffer\+\_\+texture}
+
+Texture associated with the \mbox{\hyperlink{structSystem_1_1System__Window_a1b17d691077fc954bdfe68e7a178909f}{xbloombuffer}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{main_8c}{main.\+c}}\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{opengl_8c}{}\section{src/opengl.c File Reference}
+\label{opengl_8c}\index{src/opengl.c@{src/opengl.c}}
+
+
+Functions for Open\+GL A\+PI.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function G\+Lint \mbox{\hyperlink{opengl_8c_a302ca4faf2a341c20aa44036140b995e}{opengl\+Shader\+Create}} (const char $\ast$const vert\+\_\+src, const char $\ast$const frag\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Function to compile Open\+GL shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for Open\+GL A\+PI. 
+
+These functions are used to wrap around the Open\+GL A\+PI in order to provide a higher level abstraction for often used operations.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{opengl_8c_a302ca4faf2a341c20aa44036140b995e}\label{opengl_8c_a302ca4faf2a341c20aa44036140b995e}} 
+\index{opengl.c@{opengl.c}!openglShaderCreate@{openglShaderCreate}}
+\index{openglShaderCreate@{openglShaderCreate}!opengl.c@{opengl.c}}
+\subsubsection{\texorpdfstring{openglShaderCreate()}{openglShaderCreate()}}
+{\footnotesize\ttfamily internal\+\_\+function G\+Lint opengl\+Shader\+Create (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{vert\+\_\+src,  }\item[{const char $\ast$const}]{frag\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+Function to compile Open\+GL shaders. 
+
+This function takes the source of a vertex shader and a fragment shader, and compiles them into a the Open\+GL program for graphics rendering.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vert\+\_\+src} & Vertex shader source \\
+\hline
+{\em frag\+\_\+src} & Fragment shader source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Handle to the compiled program 
+\end{DoxyReturn}

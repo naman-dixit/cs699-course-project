@@ -1,0 +1,47 @@
+\hypertarget{file_8c}{}\section{src/file.c File Reference}
+\label{file_8c}\index{src/file.c@{src/file.c}}
+
+
+Functions for file read/write operations.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function Byte $\ast$ \mbox{\hyperlink{file_8c_a92ea318a887728d08cdd934cbbe8eaec}{file\+Read}} (char $\ast$file\+\_\+path, Size $\ast$size)
+\begin{DoxyCompactList}\small\item\em Reads a file at the given path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for file read/write operations. 
+
+These functions are used in readig and writing files. These are the low-\/level functions on which other systems like asset loader rely.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{file_8c_a92ea318a887728d08cdd934cbbe8eaec}\label{file_8c_a92ea318a887728d08cdd934cbbe8eaec}} 
+\index{file.c@{file.c}!fileRead@{fileRead}}
+\index{fileRead@{fileRead}!file.c@{file.c}}
+\subsubsection{\texorpdfstring{fileRead()}{fileRead()}}
+{\footnotesize\ttfamily internal\+\_\+function Byte$\ast$ file\+Read (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+path,  }\item[{Size $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Reads a file at the given path. 
+
+This function is used for loading and reading files for the game which contain various pieces of data needed for the proper operations of the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & Path to the file \\
+\hline
+{\em size} & Returns the size of read file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the file data 
+\end{DoxyReturn}

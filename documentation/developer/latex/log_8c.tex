@@ -1,0 +1,122 @@
+\hypertarget{log_8c}{}\section{src/log.c File Reference}
+\label{log_8c}\index{src/log.c@{src/log.c}}
+
+
+Functions for logging.  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{log_8c_ac2642f9959f3f0287f297b941797c733}{Log\+\_\+\+Level}} \{ \newline
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+V\+E\+R\+B\+O\+SE}, 
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}, 
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}, 
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}, 
+\newline
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL}, 
+{\bfseries L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+O\+U\+NT}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of all priority levels of logging. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}{Log\+\_\+\+Channel}} \{ \newline
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+U\+N\+K\+N\+O\+WN} = S\+D\+L\+\_\+\+L\+O\+G\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+ON, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+O\+P\+E\+N\+GL}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+S\+S\+E\+TS}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+L\+OG}, 
+\newline
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+F\+I\+LE}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+C\+R\+I\+PT}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+T\+I\+ME}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+U\+D\+IO}, 
+\newline
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+R\+E\+N\+D\+ER}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+I\+N\+IT}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+A\+RG}, 
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+L\+O\+OP}, 
+\newline
+{\bfseries L\+O\+G\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+C\+O\+U\+NT}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of all sources of logging messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function B32 \mbox{\hyperlink{log_8c_a474db88ab37ec204ad2cedca469634d2}{log\+Console}} (enum \mbox{\hyperlink{log_8c_ac2642f9959f3f0287f297b941797c733}{Log\+\_\+\+Level}} level, enum \mbox{\hyperlink{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}{Log\+\_\+\+Channel}} channel, const char $\ast$text,...)
+\begin{DoxyCompactList}\small\item\em Function to log console data/information. \end{DoxyCompactList}\item 
+internal\+\_\+function void \mbox{\hyperlink{log_8c_a454d27e19f5404c2ecb8cbc722411fb5}{log\+G\+L\+Debug\+Callback}} (U32 source, U32 type, U32 id, U32 severity, S32 length, const Char $\ast$message, const void $\ast$user\+\_\+param)
+\begin{DoxyCompactList}\small\item\em Function to log Open\+GL diagnostics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for logging. 
+
+These functions are used for logging any data that could be used for debugging, diagnostics or analysis in the future.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}\label{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}} 
+\index{log.c@{log.c}!Log\_Channel@{Log\_Channel}}
+\index{Log\_Channel@{Log\_Channel}!log.c@{log.c}}
+\subsubsection{\texorpdfstring{Log\_Channel}{Log\_Channel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}{Log\+\_\+\+Channel}}}
+
+
+
+Enumeration of all sources of logging messages. 
+
+This enum provides all the channels (or sources) from which a log diagnostic may arrive. \mbox{\Hypertarget{log_8c_ac2642f9959f3f0287f297b941797c733}\label{log_8c_ac2642f9959f3f0287f297b941797c733}} 
+\index{log.c@{log.c}!Log\_Level@{Log\_Level}}
+\index{Log\_Level@{Log\_Level}!log.c@{log.c}}
+\subsubsection{\texorpdfstring{Log\_Level}{Log\_Level}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{log_8c_ac2642f9959f3f0287f297b941797c733}{Log\+\_\+\+Level}}}
+
+
+
+Enumeration of all priority levels of logging. 
+
+This enum provides various priority (or severity) levels that we can assign to any log diagnostic. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{log_8c_a474db88ab37ec204ad2cedca469634d2}\label{log_8c_a474db88ab37ec204ad2cedca469634d2}} 
+\index{log.c@{log.c}!logConsole@{logConsole}}
+\index{logConsole@{logConsole}!log.c@{log.c}}
+\subsubsection{\texorpdfstring{logConsole()}{logConsole()}}
+{\footnotesize\ttfamily internal\+\_\+function B32 log\+Console (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{log_8c_ac2642f9959f3f0287f297b941797c733}{Log\+\_\+\+Level}}}]{level,  }\item[{enum \mbox{\hyperlink{log_8c_a14bcf0aa96b6519645b8a26a6f3cc98f}{Log\+\_\+\+Channel}}}]{channel,  }\item[{const char $\ast$}]{text,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Function to log console data/information. 
+
+This function is used for logging console information and other errors and warning messages produced during the game\textquotesingle{}s executions. \mbox{\Hypertarget{log_8c_a454d27e19f5404c2ecb8cbc722411fb5}\label{log_8c_a454d27e19f5404c2ecb8cbc722411fb5}} 
+\index{log.c@{log.c}!logGLDebugCallback@{logGLDebugCallback}}
+\index{logGLDebugCallback@{logGLDebugCallback}!log.c@{log.c}}
+\subsubsection{\texorpdfstring{logGLDebugCallback()}{logGLDebugCallback()}}
+{\footnotesize\ttfamily internal\+\_\+function void log\+G\+L\+Debug\+Callback (\begin{DoxyParamCaption}\item[{U32}]{source,  }\item[{U32}]{type,  }\item[{U32}]{id,  }\item[{U32}]{severity,  }\item[{S32}]{length,  }\item[{const Char $\ast$}]{message,  }\item[{const void $\ast$}]{user\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Function to log Open\+GL diagnostics. 
+
+This function is used for logging 3D rendering debug data and other error and warning messages related to 3D Open\+GL graphics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Information on who sent the diagnostic \\
+\hline
+{\em type} & Kind of diagnostic \\
+\hline
+{\em id} & Unique ID of the diagnostic \\
+\hline
+{\em severity} & Denotes how severe it is \\
+\hline
+{\em length} & Length of the diagnostic message \\
+\hline
+{\em message} & Diagnostic message \\
+\hline
+{\em user\+\_\+param} & Any user parameters, unused \\
+\hline
+\end{DoxyParams}

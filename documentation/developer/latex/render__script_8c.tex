@@ -1,0 +1,67 @@
+\hypertarget{render__script_8c}{}\section{src/render\+\_\+script.c File Reference}
+\label{render__script_8c}\index{src/render\_script.c@{src/render\_script.c}}
+
+
+Lua functions for rendering.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+internal\+\_\+function int \mbox{\hyperlink{render__script_8c_a8b4847a42665766902aa42a1d4fe5c68}{script\+Render\+Get\+Text\+Dimensions}} (lua\+\_\+\+State $\ast$l)
+\begin{DoxyCompactList}\small\item\em Lua injected function which computes the size of text in screen space. \end{DoxyCompactList}\item 
+internal\+\_\+function int \mbox{\hyperlink{render__script_8c_a63cffbe82aff5dcab9df4ffca7e7054b}{script\+Render\+Text}} (lua\+\_\+\+State $\ast$l)
+\begin{DoxyCompactList}\small\item\em Lua injected function which calls \mbox{\hyperlink{render_8c_a04c6156b9c7fe9ed75023d454b354123}{render\+Text}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lua functions for rendering. 
+
+These functions are called from Lua and are used to hook into the renderer that is implemented in the engine.
+
+\begin{DoxyAuthor}{Author}
+Team Octal 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{render__script_8c_a8b4847a42665766902aa42a1d4fe5c68}\label{render__script_8c_a8b4847a42665766902aa42a1d4fe5c68}} 
+\index{render\_script.c@{render\_script.c}!scriptRenderGetTextDimensions@{scriptRenderGetTextDimensions}}
+\index{scriptRenderGetTextDimensions@{scriptRenderGetTextDimensions}!render\_script.c@{render\_script.c}}
+\subsubsection{\texorpdfstring{scriptRenderGetTextDimensions()}{scriptRenderGetTextDimensions()}}
+{\footnotesize\ttfamily internal\+\_\+function int script\+Render\+Get\+Text\+Dimensions (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Lua injected function which computes the size of text in screen space. 
+
+This function is called from Lua and is used to pre-\/compute the size some text would take in screen space if rendered as is.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{render__script_8c_a63cffbe82aff5dcab9df4ffca7e7054b}\label{render__script_8c_a63cffbe82aff5dcab9df4ffca7e7054b}} 
+\index{render\_script.c@{render\_script.c}!scriptRenderText@{scriptRenderText}}
+\index{scriptRenderText@{scriptRenderText}!render\_script.c@{render\_script.c}}
+\subsubsection{\texorpdfstring{scriptRenderText()}{scriptRenderText()}}
+{\footnotesize\ttfamily internal\+\_\+function int script\+Render\+Text (\begin{DoxyParamCaption}\item[{lua\+\_\+\+State $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Lua injected function which calls \mbox{\hyperlink{render_8c_a04c6156b9c7fe9ed75023d454b354123}{render\+Text}}. 
+
+This function is called from Lua and is used to call into \mbox{\hyperlink{render_8c_a04c6156b9c7fe9ed75023d454b354123}{render\+Text}} using proper parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lua context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Execution status 
+\end{DoxyReturn}
